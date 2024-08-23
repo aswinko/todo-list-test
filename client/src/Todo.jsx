@@ -18,35 +18,6 @@ const Todo = () => {
           </div>
         ))
       )}
-
-      {/* <div className="todo-list">
-        <p>Task 1</p>
-        <div>
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-      </div>
-      <div className="todo-list">
-        <p>Task 1</p>
-        <div>
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-      </div>
-      <div className="todo-list">
-        <p>Task 1</p>
-        <div>
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-      </div>
-      <div className="todo-list">
-        <p>Task 1</p>
-        <div>
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-      </div> */}
     </div>
   )
 }
