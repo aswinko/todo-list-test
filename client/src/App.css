@@ -25,7 +25,7 @@
   border: 1px solid #fff;
 }
 
-.sub-container .todo .todo-list {
+.sub-container .todo .todo-list div {
   display: flex;
   gap: 1rem;
   align-items: center;

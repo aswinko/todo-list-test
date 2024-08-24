@@ -1,17 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 
-const Create = () => {
+const Create = ({ addTask }) => {
+  const [task, setTask] = useState('');
 
-    
+  const handleAdd = () => {
+    if (task.trim() !== '') {
+      addTask(task);
+      setTask(''); // Clear input after adding
+    }
+  };
 
   return (
     <div>
-        <form action="">
-            <input type="text" placeholder="Enter the task" name='' id='' />
-            <button type="button">Add Task</button>
-        </form>
+      <form onSubmit={(e) => e.preventDefault()}>
+        <input
+          type="text"
+          placeholder="Enter the task"
+          value={task}
+          onChange={(e) => setTask(e.target.value)}
+        />
+        <button type="button" onClick={handleAdd}>
+          Add Task
+        </button>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default Create
+export default Create;
